@@ -1,39 +1,18 @@
-import React, { useEffect, useState } from "react";
-// import { useSelector, useDispatch } from "react-redux";
-import { useAppDispatch, useAppSelector } from "../../Store/hooks.tsx"; // Import typed hooks
+import React, { useEffect } from "react";
+import { useAppDispatch, useAppSelector } from "../../Store/hooks.tsx"; 
 
-import { RootState } from "../../Store/store.tsx";
-
-// import { fetchData } from "../../Store/Api.store.tsx";
 import SpaceCard from "./spaceCardCommon.tsx";
 import { fetchSpaces } from "../../Store/Api.store.tsx";
 
 export default function SpaceOverview() {
-  //   const [space, setSpace] = useState<any[]>([]);
-  const dispatch = useAppDispatch(); // Use typed dispatch
+  const dispatch = useAppDispatch(); 
   const space = useAppSelector((state) => state.space.data);
   const spaceStatus = useAppSelector((state) => state.space.status);
 
-  //   const fetchDataAsync = async () => {
-  //     try {
-  //       const data = await fetchData(); // Await for fetchData to resolve
-  //       setSpace(data);
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
-
-  //   useEffect(() => {
-  //     fetchDataAsync();
-  //   }, []);
-
   useEffect(() => {
-    if (spaceStatus === "idle") {
       dispatch(fetchSpaces());
-    }
   }, [spaceStatus, dispatch]);
 
-  console.log(space, "space");
   return (
     <>
       <div className="container spaceOverview_container">

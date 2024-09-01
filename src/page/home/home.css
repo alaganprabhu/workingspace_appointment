@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 .container-fluid {
-  /* position: relative; */
   border-radius: 10px;
 }
 
 .home_background {
-  background-image: url("../../../public/images/home.svg"); /* Light background */
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
+  background-image: url("../../../public/images/home.svg"); 
 }
 .left_column {
   text-align: start;
@@ -20,14 +17,13 @@
 h1 {
   color: #263238;
   font-size: 58px;
-  /* line-height: 1.5 rem; */
   line-height: 70.19px !important;
   letter-spacing: -1px;
   font-weight: 700;
   font-family: "Inter", sans-serif;
-  max-width: 600px; /* Set a maximum width for the h1 */
-  line-height: 1.2; /* Adjust line height for better spacing */
-  word-break: break-word; /* Allows breaking of long words */
+  max-width: 600px; 
+  line-height: 1.2; 
+  word-break: break-word; 
   margin: 0;
 }
 

@@ -13,7 +13,6 @@ const ChooseUs: React.FC<chooseElement> = ({ text, icon }) => {
         <span>{text}</span>
       </div>
     </div>
-    // {/* </div> */}
   );
 };
 
