@@ -1,0 +1,22 @@
+.header {
+  background-color: #ffffff;
+  height: 90px;
+  padding: 0px 50px;
+  width: 100%;
+}
+
+.header_layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center !important;
+  width: 100% !important;
+}
+/* .header_layout .bhive_work {
+  width: 125px;
+  height: 40px;
+}
+.phone {
+  width: 42px;
+  height: 42px;
+} */

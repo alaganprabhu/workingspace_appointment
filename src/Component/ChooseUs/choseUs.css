@@ -1,0 +1,81 @@
+.choose-us-container {
+  margin-top: 8rem;
+}
+
+.choose-us-container .col {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+}
+
+.choose-us-container .col:nth-child(1),
+.choose-us-container .col:nth-child(5),
+.choose-us-container .col:nth-child(6),
+.choose-us-container .col:nth-child(4) {
+  border-left: none;
+}
+
+.choose-us-container .row-cols-sm-4 .col {
+  border-bottom: 1px solid #ccc; /* Remove bottom border for all */
+}
+.choose-us-container .row-cols-sm-4 .col:nth-child(5),
+.choose-us-container .row-cols-sm-4 .col:nth-child(6),
+.choose-us-container .row-cols-sm-4 .col:nth-child(7),
+.choose-us-container .row-cols-sm-4 .col:nth-child(8) {
+  border-bottom: none;
+}
+
+.choose-us-container .col:nth-child(4n) {
+  border-right: none; /* Remove right border for the last column in each row */
+}
+.choose-us-container .row {
+  display: flex;
+  flex-direction: row;
+}
+.choose-us-container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.3px;
+  color: #263238;
+}
+
+@media (max-width: 576px) {
+  .choose-us-container .row {
+    flex-wrap: wrap; /* Adjust for mobile */
+  }
+
+  .choose-us-container .col {
+    flex: 0 0 50%; /* Each column takes 50% width on mobile */
+    max-width: 50%;
+    border: none; /* Remove borders for mobile view */
+    padding: 10px; /* Adjust padding for mobile */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+  }
+
+  /* Card-specific styles only for mobile */
+  .choose-us-container .d-flex {
+    background-color: white; /* Mobile-specific background color */
+    border: 1px solid #ddd; /* Mobile-specific border */
+    border-radius: 8px; /* Mobile-specific rounded corners */
+    padding: 15px; /* Mobile-specific inner padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Mobile-specific subtle shadow */
+    display: flex !important; /* Display flex for mobile */
+    align-items: center; /* Align items in center for mobile */
+    flex-direction: column;
+  }
+
+  .choose-us-container .d-flex img {
+    margin-right: 10px; /* Space between icon and text on mobile */
+  }
+
+  .choose-us-container h2 {
+    text-align: center; /* Center heading on mobile */
+    font-size: 24px; /* Adjust heading size for mobile */
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0.3px;
+    color: #263238;
+  }
+}

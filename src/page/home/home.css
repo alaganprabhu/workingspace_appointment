@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.container-fluid {
+  /* position: relative; */
+  border-radius: 10px;
+}
+
+.home_background {
+  background-image: url("../../../public/images/home.svg"); /* Light background */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+}
+.left_column {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #263238;
+  font-size: 58px;
+  /* line-height: 1.5 rem; */
+  line-height: 70.19px !important;
+  letter-spacing: -1px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  max-width: 600px; /* Set a maximum width for the h1 */
+  line-height: 1.2; /* Adjust line height for better spacing */
+  word-break: break-word; /* Allows breaking of long words */
+  margin: 0;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+.text-warning {
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.btn-outline-primary {
+  border: 2px solid #007bff;
+  padding: 0.5rem;
+}
+
+.mobile_container {
+  position: relative;
+  margin-top: 15rem;
+  background: #ffffff;
+  border: 1px;
+  border-radius: 18px;
+  height: 300px;
+}
+
+.row_section {
+  margin-top: 9rem;
+}
+
+.container .mobile {
+  width: 470px;
+  height: 425px;
+  position: relative;
+  margin-top: -8rem;
+  left: 8%;
+}
+.app_store {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.app_head {
+  color: #605f5f;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  line-height: 28px;
+}
+
+@media (max-width: 570px) {
+  .home_layout {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home_background {
+    background-image: url("../../../public/images/home.svg");
+    flex-direction: column-reverse;
+  }
+  h1 {
+    color: #263238;
+    font-size: 20px !important;
+    /* line-height: 1.5 rem; */
+    line-height: 24.2px !important;
+    letter-spacing: -1px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    text-align: center;
+  }
+  .boost_content {
+    display: none;
+  }
+  .image_section {
+    display: flex;
+    justify-content: center;
+  }
+  .app_store {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .app_store img {
+    width: 135px;
+    height: 45px;
+  }
+  .app_head {
+    margin-bottom: 2rem;
+    letter-spacing: 0.3px;
+    line-height: 45px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    color: #263238;
+  }
+  .container .mobile {
+    width: 100%;
+    height: 280.93px;
+    position: relative;
+    margin-top: -8rem;
+    left: 0%;
+  }
+}
