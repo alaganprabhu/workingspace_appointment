@@ -11,16 +11,16 @@ export default function SpaceOverview() {
 
   useEffect(() => {
       dispatch(fetchSpaces());
-  }, [spaceStatus, dispatch]);
+  }, []);
 
   return (
     <>
       <div className="container spaceOverview_container">
         <h2 className="my-4">Our Space Overview</h2>
         <div className="row">
-          {space.map((ele: any) => (
+          {space.map((ele: any, index:number) => (
             <SpaceCard
-              key={ele.location}
+              key={index}
               location={ele.location}
               imageSrc={ele.image}
               dayPass={ele.dayPass}
