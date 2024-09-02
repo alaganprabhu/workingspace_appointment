@@ -9,7 +9,7 @@ const BASE_URL =
 export const fetchSpaces = createAsyncThunk("space/fetchSpaces", async () => {
   try{
     const response = await axios.get(BASE_URL);
-  return response.data;
+    return response.data;
 
   }catch(err){
     console.log(err)
